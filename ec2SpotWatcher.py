@@ -33,7 +33,7 @@ def get_instance_id():
     id_url = "http://169.254.169.254/latest/meta-data/instance_id"
     try:
         r = requests.get(id_url, timeout=1)
-        return r.tex
+        return r.text
     except:
         return "(Issue getting the instance ID)"
 
@@ -69,4 +69,3 @@ if __name__ == '__main__':
 
     check_spot_status()
     notify_owner()
-    print("Bye")
