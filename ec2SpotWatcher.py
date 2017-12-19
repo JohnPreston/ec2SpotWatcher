@@ -56,7 +56,7 @@ def notify_owner():
         print("Will send a message to %s" % (topic_arn))
         client = boto3.client('sns')
         try:
-            client.public(
+            client.publish(
                 TopicArn=topic_arn,
                 Message="Your instance %s is about to be terminated - Outbidden" % (instance_id),
                 Subject="SPOT INSTANCE TERMINATION"
