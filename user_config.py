@@ -1,3 +1,3 @@
 
-topic_arn = "arn:aws:sns:eu-west-1:123456789012:test1234"
+topic_arn = "arn:aws:sns:eu-west-1:234354856264:spotinstancesmarkedfortermination"
 
